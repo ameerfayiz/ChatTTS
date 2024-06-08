@@ -106,7 +106,8 @@ def main():
         print('local model path:', args.local_path)
         chat.load_models('local', local_path=args.local_path)
 
-    demo.launch(server_name=args.server_name, server_port=args.server_port, inbrowser=True)
+    demo.launch(share=True)
+    #,server_name=args.server_name, server_port=args.server_port, inbrowser=True
 
 
 if __name__ == '__main__':
